@@ -1,0 +1,83 @@
+
+.aboutpage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #000;
+}
+
+.imagecontainer {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.imagecontainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.aboutuscontainer {
+  width: 50%;
+}
+
+.aboutuscontainer h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+.aboutuscontainer p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #fff; /* White text color */
+}
+
+/* Responsive Design */
+
+/* For Desktops and Laptops */
+@media (min-width: 1200px) {
+  .aboutpage {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* For Tablets */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .aboutpage {
+    flex-direction: column;
+  }
+  .imagecontainer {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .aboutuscontainer {
+    width: 100%;
+  }
+}
+
+/* For Mobiles */
+@media (max-width: 767px) {
+  .aboutpage {
+    flex-direction: column;
+  }
+  .imagecontainer {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .aboutuscontainer {
+    width: 100%;
+  }
+  .aboutuscontainer h1 {
+    font-size: 24px;
+  }
+  .aboutuscontainer p {
+    font-size: 16px;
+  }
+}
